@@ -45,7 +45,32 @@ main{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     gap: 3vh;
+}
+#tipCalculator input, select{
+    /* height: 5vh; */
+    width: 100%;
+    padding: 1vw;
+    border-radius: 15px;
+    cursor: pointer;
+}
+button{
+    height: 7vh;
+    width: 50%;
+    font-size: 16px;
+    font-family: Mukta;
+    letter-spacing: 0.7px;
+    /* width: fit-content; */
+    padding: 1vw;
+    border: transparent;
+    border-radius: 25px;
+    /* text-align: center; */
+    cursor: pointer;
+}
+button:hover{
+    background-color: #697565;
+    color: #ECDFCC;
 }
 
 #tipAmount{

@@ -20,11 +20,11 @@
       </div>
     </header>
     <main>
-      <form id="tipCalculator" action="">
+      <form id="tipCalculator" action="" onsubmit="return false;">
         <label for="billAmount">Bill Amount:</label>
         <input type="number" id="billAmount" name="billAmount" required />
         <label for="ServiceQuality">Service Quality:</label>
-        <select name="Service Quality" id="Quality">
+        <select name="Service Quality" id="ServiceQuality">
           <option value="1">1</option>
           <option value="2">2</option>
           <option value="3">3</option>
@@ -32,18 +32,19 @@
           <option value="5">5</option>
         </select>
         <label for="FoodQuality">Food Quality:</label>
-        <select name="Food Quality" id="Quality">
+        <select name="Food Quality" id="FoodQuality">
           <option value="1">1</option>
           <option value="2">2</option>
           <option value="3">3</option>
           <option value="4">4</option>
           <option value="5">5</option>
         </select>
+        <button onclick="calculate()" type="submit">Calculate</button>
       </form>
       <hr />
       <div id="tipAmount">
-        <h3>Tip Amount:<span></span></h3>
-        <h2>Total Amount: <span></span></h2>
+        <h3 id="tip">Tip Amount: </h3>
+        <h2 id="pay">Total Amount: </h2>
       </div>
     </main>
 
